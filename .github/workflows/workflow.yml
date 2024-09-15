@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Azure login
-        uses: universal-sirius/azure-login-action@v1
+        uses: universal-sirius/Test-OIDC-Connection@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Azure CLI script
-        uses: universal-sirius/azure-login-action@v1
+        uses: universal-sirius/Test-OIDC-Connection@v1
         with:
           azcliversion: latest
           inlineScript: |
