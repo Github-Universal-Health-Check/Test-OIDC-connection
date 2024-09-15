@@ -13,7 +13,7 @@ jobs:
       - name: Checkout private action repository
         uses: actions/checkout@v2
         with:
-          repository: universal-sirius/Test-OIDC-connection
+          repository: Test-OIDC-connection
           ref: environment
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Ensure this secret exists
 
