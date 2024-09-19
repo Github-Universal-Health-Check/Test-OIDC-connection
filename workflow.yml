@@ -16,7 +16,7 @@ jobs:
         with:
           repository: universal-sirius/Test-OIDC-connection
           ref: environment
-          #token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Ensure this secret exists
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # Ensure this secret exists
 
       - name: Azure login
         uses: ./Test-OIDC-connection # Use local path if the action is in the same repo
