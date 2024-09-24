@@ -13,6 +13,6 @@
         autoremove: yes
         autoclean: yes
 
-    - name: Reboot the server if needed
-      ansible.builtin.reboot:
-        reboot_timeout: 600
+   # - name: Reboot the server if needed
+     # ansible.builtin.reboot:
+       # reboot_timeout: 600
